@@ -1,11 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
 $bg-color: #252525 !important;
 $font-color: #fff !important;
+$blue: #1351B4;
+
+@font-face {
+  font-family: 'Rawline 600';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/rawline/rawline-600.ttf');
+}
+@font-face {
+  font-family: 'Rawline 400';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/rawline/rawline-400.ttf');
+}
 
 .grid{
   background-color: $bg-color;
   color: $font-color;
+
+  .col-5{
+    color: black;
+    background-color: white;
+    margin-top: 30px;
+    padding-left: 30px;
+    height: 465px;
+    span{
+      font-family: 'Rawline 600';
+    }
+    input{
+      width:70%;
+      margin-right: 30px;
+    }
+
+    .botoes{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 24px;
+      gap: 8px;
+    }
+
+    button{
+      font-family: 'Rawline 600';
+      font-size: 14px;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 39px;
+      width: 168.69px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-color: $blue;
+      color: $blue;
+    }
+    button:hover{
+      background-color: $blue;
+      border-color: $blue;
+      border-width: 0;
+      color: white;
+    }
+    a{
+      font-family: 'Rawline 400';
+      font-style: normal;
+      font-size: 14px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-decoration-line: underline;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+
+    }
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%;  }
+body { margin: 0; font-family: "Rawline 600"; }

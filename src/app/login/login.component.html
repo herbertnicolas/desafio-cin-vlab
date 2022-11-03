@@ -5,13 +5,24 @@
     <h1>Login do Usuário</h1>
   </div>
   <div class="col-5">
-    <h1>Identifique-se com:</h1>
-    <label>Nome de Usuário</label>
-    <input type="text"/>
-    <label>Senha</label>
-    <input type="password"/>
-    <a h-ref="">Esqueci minha senha</a>
-    <button id="btn-cadastro">Cadastre-se</button>
-    <button id="btn-login">Continuar</button>
+      <h1>Identifique-se com:</h1> <br>
+
+      <div class="form-user">
+        <label><span>Nome de Usuário</span></label> <br>
+        <input type="text" placeholder="Digite o seu nome de usuário"/>
+      </div>
+      <br>
+
+      <div class="form-psw">
+        <label>Senha</label> <br>
+        <input type="password" placeholder="Digite a sua senha atual"/>
+      </div>
+
+      <a h-ref="https://www.google.com">Esqueci minha senha</a>
+
+      <div class="botoes">
+        <button mat-button>Cadastre-se</button>
+        <button id="btn-login">Continuar</button>
+      </div>
   </div>
 </div>
